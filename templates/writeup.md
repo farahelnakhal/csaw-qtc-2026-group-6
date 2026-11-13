@@ -170,3 +170,5 @@ without the generator.
 simulations used 48 shots per case. Noise is not modelled: the recovery relies 
 on exact constancy, and under readout noise the relations become biased parities 
 requiring a majority test over $O(\varepsilon^{-2}\log m)$ shots, with $\varepsilon = (1-2\eta)^2$.
+
+**AI Disclosure:** AI was used for code generation

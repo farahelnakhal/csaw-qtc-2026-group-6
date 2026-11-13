@@ -1,0 +1,54 @@
+{
+  "circuits": {
+    "circuit1": {
+      "key": "",
+      "trigger": {
+        "bits": [],
+        "activation_condition": "",
+        "explanation": ""
+      }
+    },
+    "circuit2": {
+      "key": "",
+      "trigger": {
+        "bits": [],
+        "activation_condition": "",
+        "explanation": ""
+      }
+    },
+    "circuit3": {
+      "key": "",
+      "trigger": {
+        "bits": [],
+        "activation_condition": "",
+        "explanation": ""
+      }
+    },
+    "circuit4": {
+      "key": "",
+      "trigger": {
+        "bits": [],
+        "activation_condition": "",
+        "explanation": ""
+      }
+    },
+    "circuit5": {
+      "key": "",
+      "trigger": {
+        "bits": [],
+        "activation_condition": "",
+        "explanation": ""
+      }
+    },
+    "circuit6": {
+      "key": "",
+      "trigger": {
+        "bits": [],
+        "activation_condition": "",
+        "explanation": ""
+      }
+    }
+  },
+  "code": "solution.py",
+  "writeup": "writeup.md"
+}

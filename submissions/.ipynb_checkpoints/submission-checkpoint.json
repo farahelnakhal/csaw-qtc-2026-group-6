@@ -1,0 +1,84 @@
+{
+  "circuits": {
+    "circuit1": {
+      "key": "01011011010100000110011010010001001101100",
+      "trigger": {
+        "bits": [
+          {
+            "register": "c",
+            "index": 20
+          }
+        ],
+        "activation_condition": "c[20] == 1",
+        "explanation": "c[20] is measured mid-circuit from an ancilla that comes out 1 about one shot in ten, 873 of 8192 here, and it guards all 20 injected blocks, while nothing in the application reads c[21]..c[40]. when the trigger stays low those bits are never written, so they unmask to zero and hand over their key bits straight from the dormant shots. when it fires, the blocks copy data into them: c[20+1+j] gets a copy of c[20-1-j], so the upper half mirrors the lower half about c[20]. that is what breaks the mask, since a fixed xor cancels in a parity: c[i] xor c[40-i] stays constant on the firing shots, which gives the rest of the key. the trigger bit itself comes from the guard polarity plus the fact that it fires on a minority of shots. the key checks out on all 8192 shots: upper block zero on the 7319 dormant ones, every mirror pair equal on the 873 active ones, and c[20] equal to 1 on exactly those and no others."
+      }
+    },
+    "circuit2": {
+      "key": "111001001101111100011000100010101",
+      "trigger": {
+        "bits": [
+          {
+            "register": "c",
+            "index": 16
+          }
+        ],
+        "activation_condition": "c[16] == 1",
+        "explanation": "c[16] is measured mid-circuit from an ancilla that comes out 1 about one shot in ten, 828 of 8192 here, and it guards all 16 injected blocks, while nothing in the application reads c[17]..c[32]. when the trigger stays low those bits are never written, so they unmask to zero and hand over their key bits straight from the dormant shots. when it fires, the blocks copy data into them: c[16+1+j] gets a copy of c[16-1-j], so the upper half mirrors the lower half about c[16]. that is what breaks the mask, since a fixed xor cancels in a parity: c[i] xor c[32-i] stays constant on the firing shots, which gives the rest of the key. the trigger bit itself comes from the guard polarity plus the fact that it fires on a minority of shots. the key checks out on all 8192 shots: upper block zero on the 7364 dormant ones, every mirror pair equal on the 828 active ones, and c[16] equal to 1 on exactly those and no others."
+      }
+    },
+    "circuit3": {
+      "key": "11010101000000000111000101110110010000001",
+      "trigger": {
+        "bits": [
+          {
+            "register": "c",
+            "index": 20
+          }
+        ],
+        "activation_condition": "c[20] == 1",
+        "explanation": "c[20] is measured mid-circuit from an ancilla that comes out 1 about one shot in ten, 822 of 8192 here, and it guards all 20 injected blocks, while nothing in the application reads c[21]..c[40]. when the trigger stays low those bits are never written, so they unmask to zero and hand over their key bits straight from the dormant shots. when it fires, the blocks copy data into them: c[20+1+j] gets a copy of c[20-1-j], so the upper half mirrors the lower half about c[20]. that is what breaks the mask, since a fixed xor cancels in a parity: c[i] xor c[40-i] stays constant on the firing shots, which gives the rest of the key. the trigger bit itself comes from the guard polarity plus the fact that it fires on a minority of shots. the key checks out on all 8192 shots: upper block zero on the 7370 dormant ones, every mirror pair equal on the 822 active ones, and c[20] equal to 1 on exactly those and no others."
+      }
+    },
+    "circuit4": {
+      "key": "1101011000100110111100011100011",
+      "trigger": {
+        "bits": [
+          {
+            "register": "c",
+            "index": 15
+          }
+        ],
+        "activation_condition": "c[15] == 0",
+        "explanation": "c[15] is measured mid-circuit from an ancilla that comes out 0 about one shot in ten, 816 of 8192 here, and it guards all 15 injected blocks, while nothing in the application reads c[16]..c[30]. when the trigger stays low those bits are never written, so they unmask to zero and hand over their key bits straight from the dormant shots. when it fires, the blocks copy data into them: c[15+1+j] gets a copy of c[15-1-j], so the upper half mirrors the lower half about c[15]. that is what breaks the mask, since a fixed xor cancels in a parity: c[i] xor c[30-i] stays constant on the firing shots, which gives the rest of the key. the trigger bit itself comes from the guard polarity plus the fact that it fires on a minority of shots. the key checks out on all 8192 shots: upper block zero on the 7376 dormant ones, every mirror pair equal on the 816 active ones, and c[15] equal to 0 on exactly those and no others."
+      }
+    },
+    "circuit5": {
+      "key": "11101010000010101000010000101001111100110",
+      "trigger": {
+        "bits": [
+          {
+            "register": "c",
+            "index": 20
+          }
+        ],
+        "activation_condition": "c[20] == 0",
+        "explanation": "c[20] is measured mid-circuit from an ancilla that comes out 0 about one shot in ten, 816 of 8192 here, and it guards all 20 injected blocks, while nothing in the application reads c[21]..c[40]. when the trigger stays low those bits are never written, so they unmask to zero and hand over their key bits straight from the dormant shots. when it fires, the blocks copy data into them: c[20+1+j] gets a copy of c[20-1-j], so the upper half mirrors the lower half about c[20]. that is what breaks the mask, since a fixed xor cancels in a parity: c[i] xor c[40-i] stays constant on the firing shots, which gives the rest of the key. the trigger bit itself comes from the guard polarity plus the fact that it fires on a minority of shots. the key checks out on all 8192 shots: upper block zero on the 7376 dormant ones, every mirror pair equal on the 816 active ones, and c[20] equal to 0 on exactly those and no others."
+      }
+    },
+    "circuit6": {
+      "key": "00111001111100000010101100011010010",
+      "trigger": {
+        "bits": [
+          {
+            "register": "c",
+            "index": 17
+          }
+        ],
+        "activation_condition": "c[17] == 1",
+        "explanation": "c[17] is measured mid-circuit from an ancilla that comes out 1 about one shot in ten, 816 of 8192 here, and it guards all 17 injected blocks, while nothing in the application reads c[18]..c[34]. when the trigger stays low those bits are never written, so they unmask to zero and hand over their key bits straight from the dormant shots. when it fires, the blocks copy data into them: c[17+1+j] gets a copy of c[17-1-j], so the upper half mirrors the lower half about c[17]. that is what breaks the mask, since a fixed xor cancels in a parity: c[i] xor c[34-i] stays constant on the firing shots, which gives the rest of the key. the trigger bit itself comes from the guard polarity plus the fact that it fires on a minority of shots. the key checks out on all 8192 shots: upper block zero on the 7376 dormant ones, every mirror pair equal on the 816 active ones, and c[17] equal to 1 on exactly those and no others."
+      }
+    }
+  },
+  "code": "solution.py",
+  "writeup": "writeup.md"
+}

@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "id": "circuit1",
+      "circuit": "challenges/01_silent_witness/circuits/circuit1.qasm",
+      "measurements": "challenges/01_silent_witness/measurements/circuit1.txt",
+      "readout_register": "c",
+      "key_bits": 41,
+      "shots": 8192,
+      "simulation_seed": 2026
+    },
+    {
+      "id": "circuit2",
+      "circuit": "challenges/01_silent_witness/circuits/circuit2.qasm",
+      "measurements": "challenges/01_silent_witness/measurements/circuit2.txt",
+      "readout_register": "c",
+      "key_bits": 33,
+      "shots": 8192,
+      "simulation_seed": 2026
+    },
+    {
+      "id": "circuit3",
+      "circuit": "challenges/01_silent_witness/circuits/circuit3.qasm",
+      "measurements": "challenges/01_silent_witness/measurements/circuit3.txt",
+      "readout_register": "c",
+      "key_bits": 41,
+      "shots": 8192,
+      "simulation_seed": 2026
+    },
+    {
+      "id": "circuit4",
+      "circuit": "challenges/01_silent_witness/circuits/circuit4.qasm",
+      "measurements": "challenges/01_silent_witness/measurements/circuit4.txt",
+      "readout_register": "c",
+      "key_bits": 31,
+      "shots": 8192,
+      "simulation_seed": 2026
+    },
+    {
+      "id": "circuit5",
+      "circuit": "challenges/01_silent_witness/circuits/circuit5.qasm",
+      "measurements": "challenges/01_silent_witness/measurements/circuit5.txt",
+      "readout_register": "c",
+      "key_bits": 41,
+      "shots": 8192,
+      "simulation_seed": 2026
+    },
+    {
+      "id": "circuit6",
+      "circuit": "challenges/01_silent_witness/circuits/circuit6.qasm",
+      "measurements": "challenges/01_silent_witness/measurements/circuit6.txt",
+      "readout_register": "c",
+      "key_bits": 35,
+      "shots": 8192,
+      "simulation_seed": 2026
+    }
+  ]
+}
